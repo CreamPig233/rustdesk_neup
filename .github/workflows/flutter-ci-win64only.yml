@@ -1,4 +1,4 @@
-name: Full Flutter CI_edit
+name: Full Flutter CI_win64only
 
 on:
   workflow_dispatch:
