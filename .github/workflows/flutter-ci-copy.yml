@@ -6,6 +6,6 @@ on:
 
 jobs:
   run-ci:
-    uses: ./.github/workflows/flutter-build copy.yml
+    uses: ./.github/workflows/flutter-build-copy.yml
     with:
       upload-artifact: true
