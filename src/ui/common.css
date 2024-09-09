@@ -1,6 +1,7 @@
 html {
     var(accent): #0071ff;
-    var(button): #2C8CFF;
+    /*var(button): #2C8CFF;*/
+    var(button): #ffbbff;
     var(gray-bg): #eee;
     var(bg): white;
     var(border): #ccc;
