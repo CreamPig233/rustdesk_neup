@@ -39,7 +39,7 @@ class ConnectStatus: Reactor.Component {
 
     function getConnectStatusStr() {
         if (service_stopped) {
-            return translate("Service is not running");
+            return "中文测试-服务 未运行";
         } else if (connect_status == -1) {
             return translate('not_ready_status');
         } else if (connect_status == 0) {
