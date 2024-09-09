@@ -430,6 +430,7 @@ class MyIdMenu: Reactor.Component {
             var old_id = configOptions["custom-rendezvous-server"] || "";
             var old_key = configOptions["key"] || "";
             msgbox("custom-server", "ID/Relay Server", "<div .form .set-password> \
+            <div><span>Add Menu Test: </span><input|text .outline-focus name='addmenutest' value='" + old_id + "' /></div> \
             <div><span>" + translate("ID Server") + ": </span><input|text .outline-focus name='id' value='" + old_id + "' /></div> \
             <div><span>" + translate("Relay Server") + ": </span><input|text name='relay' value='" + old_relay + "' /></div> \
             <div><span>" + translate("API Server") + ": </span><input|text name='api' value='" + old_api + "' /></div> \
