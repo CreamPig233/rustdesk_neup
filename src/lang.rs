@@ -44,7 +44,7 @@ pub fn translate_locale(name: String, locale: &str) -> String {
 
         "zh-cn" => cn::T.deref(),
         "zh-tw" => cn::T.deref(),
-        _ => cn::T.deref(),
+        _ => en::T.deref(),
     };
     let (name, placeholder_value) = extract_placeholder(&name);
     let replace = |s: &&str| {
