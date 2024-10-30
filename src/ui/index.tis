@@ -568,6 +568,10 @@ class App: Reactor.Component
                             {key_confirmed ? <input type="text" readonly value={formatId(get_id())}/> : translate("Generating ...")}
                         </div>
                         <PasswordArea />
+                    
+                        <div .buttons>
+                            <button #open_settings>{translate("Settings")}</button>
+
                     </div>
 
                     <ConnectStatus @{this.connect_status} />
@@ -585,6 +589,10 @@ class App: Reactor.Component
                 
                 <div #overlay style="position: absolute;size:*;background:black;opacity:0.5;display:none" />
             </div>;
+    }
+
+    event click $(button#open_settings) {
+        myIdMenu.showSettingMenu();
     }
 
     event click $(button#connect) {
