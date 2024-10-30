@@ -568,7 +568,6 @@ class App: Reactor.Component
                             <MyIdMenu />
                             {key_confirmed ? <input type="text" readonly value={formatId(get_id())}/> : translate("Generating ...")}
                         </div>
-                        <PasswordArea />
                     
                         
                     </div>

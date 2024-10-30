@@ -373,9 +373,14 @@ div#myid, div#tags-label {
     position: relative;
 }
 
-div#myid svg#menu, div#tags-label svg#menu {
+div#tags-label svg#menu {
     position: absolute;
     right: -1em;
+}
+
+div#myid svg#menu {
+    position: absolute;
+    left: 9em;
 }
 
 div#tags-label svg#menu:hover {
