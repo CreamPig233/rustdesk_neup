@@ -10,7 +10,7 @@ env:
 
 on:
   workflow_dispatch:
-  
+
 
 jobs:
   # ensure_cargo_fmt:
