@@ -824,11 +824,11 @@ class PasswordEyeArea : Reactor.Component {
     render() {
         var method = handler.get_option('verification-method');
         var mode= handler.get_option('approve-mode');
-        var value = mode == 'click' ||  method == 'use-permanent-password' ? "-" : password_cache[0];
+        var value = mode == 'click' ||  method == 'use-permanent-password' ? translate("Disabled") : password_cache[0];
         return
             <div .eye-area style="width: *">
                 <input|text @{this.input} readonly value={value} />
-                {svg_refresh_password}
+
             </div>;
     }
 
@@ -894,7 +894,6 @@ class PasswordArea: Reactor.Component {
             <div .password style="flow:horizontal">
                 {this.renderPop()}
                 <PasswordEyeArea />
-                {svg_edit}
             </div>
         </div>;
     }
@@ -914,7 +913,7 @@ class PasswordArea: Reactor.Component {
             { !show_password ? '' : <div .separator /> }
             { !show_password ? '' : <li #set-password  disabled={ method == 'use-temporary-password' ? "true" : "false" }>{translate('Set permanent password')}</li> }
             { !show_password ? '' : <TemporaryPasswordLengthMenu /> }
-            <div .separator />
+            
             
         </menu></popup>;
     }
