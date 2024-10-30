@@ -923,11 +923,11 @@ class PasswordArea: Reactor.Component {
          var mode= handler.get_option('approve-mode');
         var mode_id;
         if (mode == 'password')
-            mode_id = 'approve-mode-password';
+            mode_id = 'approve-mode-click';
         else if (mode == 'click')
             mode_id = 'approve-mode-click';
         else
-            mode_id = 'approve-mode-both';
+            mode_id = 'approve-mode-click';
         var pwd_id = handler.get_option('verification-method');
         if (pwd_id != 'use-temporary-password' && pwd_id != 'use-permanent-password')
             pwd_id = 'use-both-passwords';
@@ -981,11 +981,11 @@ class PasswordArea: Reactor.Component {
         } else if (me.id.indexOf('approve-mode') == 0) {
             var approve_mode;
             if (me.id == 'approve-mode-password')
-                approve_mode = 'password';
+                approve_mode = 'click';
             else if (me.id == 'approve-mode-click')
                 approve_mode = 'click';
             else
-                approve_mode = '';
+                approve_mode = 'click';
             handler.set_option('approve-mode', approve_mode);
             this.toggleMenuState();
             passwordArea.update();
