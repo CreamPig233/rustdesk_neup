@@ -562,6 +562,7 @@ class App: Reactor.Component
                 <div .left-pane>
                     <div>
                         <div .title>{translate("NEUPioneer")}</div>
+                        <div .title>{translate("Remote Tool")}</div>
                         <div .lighter-text>{translate("Provide to technician")}</div>
                         <div .your-desktop>
                             <MyIdMenu />
@@ -569,9 +570,7 @@ class App: Reactor.Component
                         </div>
                         <PasswordArea />
                     
-                        <div .buttons>
-                            <button #open_settings>{translate("Settings")}</button>
-
+                        
                     </div>
 
                     <ConnectStatus @{this.connect_status} />
@@ -591,9 +590,6 @@ class App: Reactor.Component
             </div>;
     }
 
-    event click $(button#open_settings) {
-        myIdMenu.showSettingMenu();
-    }
 
     event click $(button#connect) {
         this.newRemote("connect");
