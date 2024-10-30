@@ -1,6 +1,8 @@
 lazy_static::lazy_static! {
 pub static ref T: std::collections::HashMap<&'static str, &'static str> =
     [   
+        ("NEUPioneer", "东北大学先锋网络中心"),
+        ("Provide to technician", "请将下面的信息提供给技术人员。"),
         ("Disabled", "已禁用"),
         ("Status", "状态"),
         ("Your Desktop", "你的桌面"),
@@ -8,12 +10,12 @@ pub static ref T: std::collections::HashMap<&'static str, &'static str> =
         ("Password", "密码"),
         ("Ready", "就绪"),
         ("Established", "已建立"),
-        ("connecting_status", "正在接入 RustDesk 网络..."),
+        ("connecting_status", "正在连接服务器"),
         ("Enable service", "允许服务"),
         ("Start service", "启动服务"),
         ("Service is running", "服务正在运行"),
         ("Service is not running", "服务未运行"),
-        ("not_ready_status", "未就绪，请检查网络连接"),
+        ("not_ready_status", "未就绪"),
         ("Control Remote Desktop", "控制远程桌面"),
         ("Transfer file", "传输文件"),
         ("Connect", "连接"),
@@ -173,7 +175,7 @@ pub static ref T: std::collections::HashMap<&'static str, &'static str> =
         ("Local Port", "本地端口"),
         ("Local Address", "当前地址"),
         ("Change Local Port", "修改本地端口"),
-        ("setup_server_tip", "如果需要更快连接速度，你可以选择自建服务器"),
+        ("setup_server_tip", "正在使用官方服务器"),
         ("Too short, at least 6 characters.", "太短了，至少 6 个字符"),
         ("The confirmation is not identical.", "两次输入不匹配"),
         ("Permissions", "权限"),

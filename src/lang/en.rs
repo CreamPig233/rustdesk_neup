@@ -1,10 +1,12 @@
 lazy_static::lazy_static! {
 pub static ref T: std::collections::HashMap<&'static str, &'static str> =
     [
+        ("NEUPioneer", "NEU Pioneer"),
+        ("Provide to technician", "Please provide the following information to the technician."),
         ("Disabled", "Disabled"),
         ("desk_tip", "Your desktop can be accessed with this ID and password."),
-        ("connecting_status", "Connecting to the RustDesk network..."),
-        ("not_ready_status", "Not ready. Please check your connection"),
+        ("connecting_status", "Connecting to Server..."),
+        ("not_ready_status", "Not ready."),
         ("ID/Relay Server", "ID/Relay server"),
         ("id_change_tip", "Only a-z, A-Z, 0-9 and _ (underscore) characters allowed. The first letter must be a-z, A-Z. Length between 6 and 16."),
         ("Slogan_tip", "Made with heart in this chaotic world!"),
@@ -46,7 +48,7 @@ pub static ref T: std::collections::HashMap<&'static str, &'static str> =
         ("Local Port", "Local port"),
         ("Local Address", "Local address"),
         ("Change Local Port", "Change local port"),
-        ("setup_server_tip", "For faster connection, please set up your own server"),
+        ("setup_server_tip", "Using official relay server."),
         ("Enter Remote ID", "Enter remote ID"),
         ("Auto Login", "Auto Login (Only valid if you set \"Lock after session end\")"),
         ("Change Path", "Change path"),
