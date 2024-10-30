@@ -3,7 +3,7 @@ stdout.println("current platform:", OS);
 stdout.println("is_xfce: ", is_xfce);
 
 // html min-width, min-height not working on mac, below works for all
-view.windowMinSize = (scaleIt(560), scaleIt(300));
+view.windowMinSize = (scaleIt(180), scaleIt(300));
 
 var app;
 var tmp = handler.get_connect_status();
@@ -582,14 +582,7 @@ class App: Reactor.Component
                     {!system_error && handler.is_login_wayland() && !handler.current_is_wayland() ? <FixWayland /> : ""}
                     {!system_error && handler.current_is_wayland() ? <ModifyDefaultLogin /> : ""}
                 </div>
-                <div .right-pane>
-                    <div .right-content>
-                    
-                    
-                        
-                    </div>
-                    
-                </div>
+                
                 <div #overlay style="position: absolute;size:*;background:black;opacity:0.5;display:none" />
             </div>;
     }

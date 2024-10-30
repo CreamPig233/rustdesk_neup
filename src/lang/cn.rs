@@ -1,7 +1,7 @@
 lazy_static::lazy_static! {
 pub static ref T: std::collections::HashMap<&'static str, &'static str> =
     [   
-        ("NEUPioneer", "东北大学先锋网络中心"),
+        ("NEUPioneer", "先锋网络中心远程诊断维修工具"),
         ("Provide to technician", "请将下面的信息提供给技术人员。"),
         ("Disabled", "已禁用"),
         ("Status", "状态"),
