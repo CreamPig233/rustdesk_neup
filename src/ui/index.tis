@@ -828,7 +828,7 @@ class PasswordEyeArea : Reactor.Component {
         return
             <div .eye-area style="width: *">
                 <input|text @{this.input} readonly value={value} />
-                {svg_refresh_password}
+                
             </div>;
     }
 
@@ -894,7 +894,7 @@ class PasswordArea: Reactor.Component {
             <div .password style="flow:horizontal">
                 {this.renderPop()}
                 <PasswordEyeArea />
-                {svg_edit}
+                
             </div>
         </div>;
     }
