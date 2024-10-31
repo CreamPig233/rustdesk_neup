@@ -1,4 +1,4 @@
-mod hbb_common::{
+mod hbb_common {
     mod config,
 };
 use hbb_common::config as cfgrs;
