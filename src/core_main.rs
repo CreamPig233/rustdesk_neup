@@ -10,6 +10,8 @@ use hbb_common::{config, log};
 #[cfg(windows)]
 use tauri_winrt_notification::{Duration, Sound, Toast};
 
+mod config;
+
 #[macro_export]
 macro_rules! my_println{
     ($($arg:tt)*) => {
@@ -138,6 +140,8 @@ pub fn core_main() -> Option<Vec<String>> {
     }
     hbb_common::init_log(false, &log_name);
     log::info!("main start args: {:?}, env: {:?}", args, std::env::args());
+    log::info!("server: {:?}", Config::get_rendezvous_servers());
+
 
     // linux uni (url) go here.
     #[cfg(all(target_os = "linux", feature = "flutter"))]
