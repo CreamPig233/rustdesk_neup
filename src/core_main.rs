@@ -1,3 +1,8 @@
+mod hbb_common {
+    mod config;
+};
+use hbb_common::config as cfgrs;
+
 #[cfg(windows)]
 use crate::client::translate;
 #[cfg(not(debug_assertions))]
