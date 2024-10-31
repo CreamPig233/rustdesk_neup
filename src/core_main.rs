@@ -10,7 +10,7 @@ use hbb_common::{config, log};
 #[cfg(windows)]
 use tauri_winrt_notification::{Duration, Sound, Toast};
 
-mod config
+mod config;
 
 #[macro_export]
 macro_rules! my_println{
