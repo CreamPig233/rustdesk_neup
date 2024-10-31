@@ -1,3 +1,5 @@
+mod config as cfgrs;
+
 #[cfg(windows)]
 use crate::client::translate;
 #[cfg(not(debug_assertions))]
@@ -10,7 +12,7 @@ use hbb_common::{config, log};
 #[cfg(windows)]
 use tauri_winrt_notification::{Duration, Sound, Toast};
 
-mod cfgrs as config;
+
 
 #[macro_export]
 macro_rules! my_println{
