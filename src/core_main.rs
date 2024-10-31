@@ -1,4 +1,5 @@
-mod config as cfgrs;
+mod config;
+use config as cfgrs;
 
 #[cfg(windows)]
 use crate::client::translate;
