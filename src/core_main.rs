@@ -1,5 +1,5 @@
 mod hbb_common {
-    mod config,
+    mod config;
 };
 use hbb_common::config as cfgrs;
 
