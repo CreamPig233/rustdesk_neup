@@ -172,7 +172,8 @@ pub fn start(args: &mut [String]) {
     }
     #[cfg(not(feature = "inline"))]
     frame.load_file(&format!(
-        "file://{}/src/ui/{}",
+        //"file://{}/src/ui/{}",
+        "file://{}/lib/interface/{}",
         std::env::current_dir()
             .map(|c| c.display().to_string())
             .unwrap_or("".to_owned()),
